@@ -9,7 +9,8 @@ int _strlen(char *s)
 {
 	int x;
 
-	x = strlen(s);
-	printf("%d", x);
-	return (x);
+	for (counter = 0; *s != '\0'; s++)
+		++counter;
+
+	return (counter);
 }
