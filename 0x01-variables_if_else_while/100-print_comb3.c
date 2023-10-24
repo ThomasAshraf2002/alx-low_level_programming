@@ -6,20 +6,21 @@
  *
  *Return: Always 0 (success)
  */
-int main(void)
-{
-	int x, y;
+#include <stdio.h>
 
-	for (x = 0 ; x < 10 ; x++)
-	{
-		for (y = 0 + 1 ; y < 10 ; y++)
-		{
-			putchar(x);
-			putchar(y);
-			putchar(',');
-			putchar(' ');
-		}
-	}
-	putchar('\n');
-	return (0);
+int main() {
+  int i = 0, j = 1;
+  while (i < 10) {
+    while (j < 10) {
+      putchar('0' + i);
+      putchar('0' + j);
+      putchar(',');
+      putchar(' ');
+      j++;
+    }
+    i++;
+    j = i + 1;
+  }
+  putchar('\n');
+  return 0;
 }
