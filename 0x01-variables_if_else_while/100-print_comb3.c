@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	int x,y;
+	int x, y;
 
-	for(x = 0;x < 10;x++)
+	for (x = 0 ; x < 10 ; x++)
 	{
-		for(y = 0 + 1;y < 10;y++)
+		for (y = 0 + 1 ; y < 10 ; y++)
 		{
 			putchar(x);
 			putchar(y);
