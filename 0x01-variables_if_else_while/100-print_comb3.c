@@ -6,7 +6,7 @@
  *
  *Return: Always 0 (success)
  */
-int main()
+int main(void)
 {
 	int x,y;
 
@@ -22,3 +22,4 @@ int main()
 	}
 	putchar('\n');
 	return (0);
+}
